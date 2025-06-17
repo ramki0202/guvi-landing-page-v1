@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabook - Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Volkhov:400,700|Poppins:400,500,600,700|Open+Sans:400|Roboto:400|Inter:400"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="travel-agency">
+        <!-- Hero Section -->
+        <div class="hero-section">
+
+            <!-- Header/Navigation Bar -->
+            <div class="header" style="background-color: #5e5e5e; margin-bottom: 100px; color: black;">
+                <div class="container">
+                    <div class="navbar">
+                        <div class="logo">
+                            <h3 class="logo-text">Trabook</h3>
+                            <img class="logo-icon" alt="Vector"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector.svg" />
+                        </div>
+
+                        <div class="nav-links" style="color: black;">
+                            <a href="#" class="nav-link">Home</a>
+                            <a href="#" class="nav-link">About</a>
+                            <a href="#" class="nav-link">Destinations</a>
+                            <a href="#" class="nav-link">Tours</a>
+                            <a href="#" class="nav-link">Blog</a>
+                        </div>
+
+                        <div class="login-button-container">
+                            <button class="login-button">Login</button>
+                        </div>
+
+                        <div class="mobile-menu-button">
+                            <button class="menu-icon-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Content Overlay -->
+            <div class="hero" style="padding-top: 150px;">
+                <div class="container">
+                    <div class="hero-items">
+                        <div class="w-50">
+                            <h1>Get started your exciting journey
+                                with us.
+                            </h1>
+                            <a class="btn-border" href="#">Discover Now</a>
+                        </div>
+                        <div class="w-50">
+                            <img src="./images/Image (15).png" />
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <div>
+                            <select name="location" id="location">
+                                <option value="" disabled selected>Location</option>
+                                <option value="city1">City 1</option>
+                                <option value="city2">City 2</option>
+                                <option value="city3">City 3</option>
+                            </select>
+                            <div>
+                                <span>Where are you going?</span>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="date" id="date" name="date">
+                            <div>
+                                <span>When you will go</span>
+                            </div>
+                        </div>
+                        <div>
+                            <select name="guests" id="guests">
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
+                            <div>
+                                <span>Number of guest</span>
+
+                            </div>
+
+                        </div>
+
+                        <button type="button">Explore Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Essentials Section -->
+        <section class="essentials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-dark">Things you need</span>
+                        <span class="text-orange"> to do</span>
+                    </h2>
+                    <p class="section-description">
+                        We ensure that you'll embark on a perfectly planned, safe vacation at a price you can afford.
+                    </p>
+                </div>
+
+                <div class="essentials-cards">
+                    <div class="essentials-card card-highlighted">
+                        <img class="card-vector" alt="Vector background"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-4856.svg" />
+                        <div class="card-content">
+                            <img class="card-icon" alt="Sign Up icon"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/group.png" />
+                            <h3 class="card-title">Sign Up</h3>
+                            <p class="card-description">
+                                Completes all the work associated with planning and processing
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="essentials-card">
+                        <img class="card-vector" alt="Vector background"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-4856-1.svg" />
+                        <div class="card-content">
+                            <img class="card-icon" alt="Worth of Money icon"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/group-1.png" />
+                            <h3 class="card-title">Worth of Money</h3>
+                            <p class="card-description">
+                                After successful access then book from exclusive deals & pricing
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="essentials-card">
+                        <img class="card-vector" alt="Vector background"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-4856.svg" />
+                        <div class="card-content">
+                            <img class="card-icon" alt="Exciting Travel icon"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/group-2.png" />
+                            <h3 class="card-title">Exciting Travel</h3>
+                            <p class="card-description">
+                                Start and explore a wide range of exciting travel experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="decorative-element" alt="Decorative element"
+                    src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/element.png" />
+            </div>
+        </section>
+
+        <!-- Deals Section -->
+        <section class="deals-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-dark">Exclusive </span>
+                        <span class="text-orange">deals &amp; discounts</span>
+                    </h2>
+                    <p class="section-description">
+                        Discover our fantastic early booking discounts &amp; start planning your journey.
+                    </p>
+                </div>
+
+                <div class="deals-carousel">
+                    <div class="deals-cards">
+                        <div class="deal-card">
+                            <div class="deal-image-container">
+                                <img class="deal-image" alt="Madrid image"
+                                    src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image.png" />
+                            </div>
+                            <div class="deal-content">
+                                <div class="deal-header">
+                                    <h3 class="deal-title">Madrid</h3>
+                                    <div class="deal-rating">
+                                        <img class="star-icon" alt="Star"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/star-1-6.png" />
+                                        <span class="rating-text">4.8</span>
+                                    </div>
+                                </div>
+                                <div class="deal-footer">
+                                    <div class="deal-location">
+                                        <img class="location-icon" alt="Location"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-1.svg" />
+                                        <span class="location-text">Spain</span>
+                                    </div>
+                                    <div class="deal-price">
+                                        <div class="original-price">
+                                            <span class="price-text">$950</span>
+                                            <img class="strike-through" alt="Line"
+                                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/line-5.svg" />
+                                        </div>
+                                        <div class="discounted-price">$850</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deal-card active">
+                            <div class="deal-image-container">
+                                <img class="deal-image" alt="Firenze image"
+                                    src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-1.png" />
+                                <div class="deal-overlay">
+                                    <button class="book-now-button">Book Now</button>
+                                </div>
+                            </div>
+                            <div class="deal-content">
+                                <div class="deal-header">
+                                    <h3 class="deal-title">Firenze</h3>
+                                    <div class="deal-rating">
+                                        <img class="star-icon" alt="Star"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/star-1-6.png" />
+                                        <span class="rating-text">4.5</span>
+                                    </div>
+                                </div>
+                                <div class="deal-footer">
+                                    <div class="deal-location">
+                                        <img class="location-icon" alt="Location"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-1.svg" />
+                                        <span class="location-text">Italy</span>
+                                    </div>
+                                    <div class="deal-price">
+                                        <div class="original-price">
+                                            <span class="price-text">$850</span>
+                                            <img class="strike-through" alt="Line"
+                                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/line-5.svg" />
+                                        </div>
+                                        <div class="discounted-price">$750</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deal-card">
+                            <div class="deal-image-container">
+                                <img class="deal-image" alt="Paris image"
+                                    src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-2.png" />
+                            </div>
+                            <div class="deal-content">
+                                <div class="deal-header">
+                                    <h3 class="deal-title">Paris</h3>
+                                    <div class="deal-rating">
+                                        <img class="star-icon" alt="Star"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/star-1-6.png" />
+                                        <span class="rating-text">4.4</span>
+                                    </div>
+                                </div>
+                                <div class="deal-footer">
+                                    <div class="deal-location">
+                                        <img class="location-icon" alt="Location"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-1.svg" />
+                                        <span class="location-text">France</span>
+                                    </div>
+                                    <div class="deal-price">
+                                        <div class="original-price">
+                                            <span class="price-text">$699</span>
+                                            <img class="strike-through" alt="Line"
+                                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/line-5.svg" />
+                                        </div>
+                                        <div class="discounted-price">$599</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deal-card">
+                            <div class="deal-image-container">
+                                <img class="deal-image" alt="London image"
+                                    src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-3.png" />
+                            </div>
+                            <div class="deal-content">
+                                <div class="deal-header">
+                                    <h3 class="deal-title">London</h3>
+                                    <div class="deal-rating">
+                                        <img class="star-icon" alt="Star"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/star-1-6.png" />
+                                        <span class="rating-text">4.8</span>
+                                    </div>
+                                </div>
+                                <div class="deal-footer">
+                                    <div class="deal-location">
+                                        <img class="location-icon" alt="Location"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-1.svg" />
+                                        <span class="location-text">UK</span>
+                                    </div>
+                                    <div class="deal-price">
+                                        <div class="original-price">
+                                            <span class="price-text">$850</span>
+                                            <img class="strike-through" alt="Line"
+                                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/line-5.svg" />
+                                        </div>
+                                        <div class="discounted-price">$850</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button class="carousel-button prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M19 12H5"></path>
+                                <path d="M12 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button class="carousel-button next active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Plans Section -->
+        <section class="travel-plans-section">
+            <div class="container">
+                <img class="decorative-element-top" alt="Decorative element"
+                    src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/element-1.png" />
+
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-dark">Best </span>
+                        <span class="text-orange">vacation plan</span>
+                    </h2>
+                    <p class="section-description">
+                        Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive
+                        offers!
+                    </p>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-button prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 12H5"></path>
+                            <path d="M12 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="nav-button next active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="vacation-cards">
+                    <div class="vacation-card">
+                        <img class="vacation-image" alt="Rome"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-4.png" />
+                        <div class="vacation-content">
+                            <div class="vacation-header">
+                                <h3 class="vacation-title">Rome, Italty</h3>
+                                <div class="vacation-price">$5,42k</div>
+                            </div>
+                            <div class="vacation-footer">
+                                <div class="vacation-duration">
+                                    <img class="duration-icon" alt="Navigation"
+                                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/navigation.png" />
+                                    <span class="duration-text">10 Days Trip</span>
+                                </div>
+                                <div class="vacation-rating">
+                                    <img class="star-icon" alt="Star"
+                                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/star-1-6.png" />
+                                    <span class="rating-text">4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vacation-card highlighted">
+                        <img class="vacation-image" alt="London"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-5.png" />
+                        <div class="vacation-content">
+                            <div class="vacation-header">
+                                <h3 class="vacation-title">London,UK</h3>
+                                <div class="vacation-price">$2,42k</div>
+                            </div>
+                            <div class="vacation-footer">
+                                <div class="vacation-duration">
+                                    <img class="duration-icon" alt="Navigation"
+                                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/navigation-0.png" />
+                                    <span class="duration-text">07 Days Trip</span>
+                                </div>
+                                <div class="vacation-rating">
+                                    <img class="star-icon" alt="Star"
+                                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/star-1-6.png" />
+                                    <span class="rating-text">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vacation-card">
+                        <img class="vacation-image" alt="Osaka"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-6.png" />
+                        <div class="vacation-content">
+                            <div class="vacation-header">
+                                <h3 class="vacation-title">Osaka,Japan</h3>
+                                <div class="vacation-price">$5,42k</div>
+                            </div>
+                            <div class="vacation-footer">
+                                <div class="vacation-duration">
+                                    <img class="duration-icon" alt="Navigation"
+                                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/navigation-1.png" />
+                                    <span class="duration-text">10 Days Trip</span>
+                                </div>
+                                <div class="vacation-rating">
+                                    <img class="star-icon" alt="Star"
+                                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/star-1-6.png" />
+                                    <span class="rating-text">4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="testimonials-content">
+                    <div class="testimonials-left">
+                        <h2 class="testimonials-title">
+                            <span class="text-dark">What people say</span><br />
+                            <span class="text-orange">about Us.</span>
+                        </h2>
+                        <p class="testimonials-description">
+                            Our Clients send us bunch of smilies with our services and we love them.
+                        </p>
+                        <div class="testimonials-controls">
+                            <button class="control-button prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M19 12H5"></path>
+                                    <path d="M12 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button class="control-button next active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-right">
+                        <div class="testimonial-card featured">
+                            <img class="testimonial-image" alt="Profile"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-7.png" />
+                            <p class="testimonial-quote">
+                                "On the Windows talking painted pasture yet its express parties use. Sure last upon he
+                                same as knew next. Of believed or diverted no."
+                            </p>
+                            <h3 class="testimonial-name">Mike taylor</h3>
+                            <p class="testimonial-location">Lahore, Pakistan</p>
+                        </div>
+
+                        <div class="testimonial-card secondary">
+                            <p class="testimonial-quote">
+                                "On the Windows talking painted pasture yet its express parties use. Sure last upon he
+                                same as knew next. Of believed or diverted no."
+                            </p>
+                            <h3 class="testimonial-name">Chris Thomas</h3>
+                            <p class="testimonial-location">CEO of Red Button</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decorative-elements">
+                    <img class="vector-element-1" alt="Vector"
+                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-4.svg" />
+                    <div class="vector-element-2">
+                        <div class="vector-inner">
+                            <img class="vector-group" alt="Group"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/group-1000003559.png" />
+                            <img class="vector-image" alt="Vector"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-3.svg" />
+                        </div>
+                        <img class="vector-element-3" alt="Vector"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-4.svg" />
+                    </div>
+                    <img class="vector-element-4" alt="Vector"
+                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-4.svg" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="container">
+                <h2 class="blog-title">
+                    <span class="text-dark">Get update with </span>
+                    <span class="text-orange">latest blog </span>
+                </h2>
+
+                <div class="blog-cards">
+                    <div class="blog-card">
+                        <img class="blog-image" alt="Blog post image"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-8.png" />
+                        <h3 class="blog-post-title">The Amazing Difference a Year of Travelling .</h3>
+                        <p class="blog-date">July 27, 2021</p>
+                    </div>
+
+                    <div class="blog-card">
+                        <img class="blog-image" alt="Blog post image"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-9.png" />
+                        <h3 class="blog-post-title">Travel far enough, you meet yourself.</h3>
+                        <p class="blog-date">July 27, 2021</p>
+                    </div>
+
+                    <div class="blog-card">
+                        <img class="blog-image" alt="Blog post image"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-10.png" />
+                        <h3 class="blog-post-title">How to Save Money While Visiting Africa .</h3>
+                        <p class="blog-date">July 27, 2021</p>
+                    </div>
+
+                    <div class="blog-card">
+                        <img class="blog-image" alt="Blog post image"
+                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/image-11.png" />
+                        <h3 class="blog-post-title">Reflections on 5 Months of Travel: Time to Hang</h3>
+                        <p class="blog-date">July 27, 2021</p>
+                    </div>
+                </div>
+
+                <div class="blog-pagination">
+                    <div class="pagination-dot"></div>
+                    <div class="pagination-dot active"></div>
+                    <div class="pagination-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            <div class="subscription-card">
+                <img class="subscription-element-1" alt="Element"
+                    src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/element-2.png" />
+                <img class="subscription-element-2" alt="Element"
+                    src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/element-3.png" />
+
+                <div class="subscription-content">
+                    <h2 class="subscription-title">Subscribe and get exclusive deals &amp; offer</h2>
+                    <div class="subscription-form">
+                        <div class="form-input">
+                            <div class="input-icon">
+                                <div class="mail-icon">
+                                    <img class="mail-vector" alt="Vector"
+                                        src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector-5.svg" />
+                                </div>
+                                <span class="input-placeholder">Enter your mail</span>
+                            </div>
+                            <button class="subscribe-button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="company-info">
+                        <div class="company-logo">
+                            <h3 class="logo-text">Trabook</h3>
+                            <img class="logo-icon" alt="Vector"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/vector.svg" />
+                        </div>
+                        <p class="company-description">
+                            Book your trip in minute, get full<br />
+                            Control for much longer.
+                        </p>
+                        <div class="social-icons">
+                            <img class="social-icon" alt="Social"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/social-1.png" />
+                            <div class="social-icon-container">
+                                <div class="social-background">
+                                    <div class="social-inner">
+                                        <img class="social-dot" alt="Group"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/group-4.png" />
+                                        <img class="social-center" alt="Group"
+                                            src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/group-5.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="social-icon" alt="Social"
+                                src="https://c.animaapp.com/mbzx9rqhviP2qQ/img/social.png" />
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Company</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#" class="footer-link">About</a></li>
+                                <li><a href="#" class="footer-link">Careers</a></li>
+                                <li><a href="#" class="footer-link">Logistic</a></li>
+                                <li><a href="#" class="footer-link">Privacy & Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Contact</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#" class="footer-link">Help/FAQ</a></li>
+                                <li><a href="#" class="footer-link">Press</a></li>
+                                <li><a href="#" class="footer-link">Affilates</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4 class="footer-heading">More</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#" class="footer-link">Press Centre</a></li>
+                                <li><a href="#" class="footer-link">Our Blog</a></li>
+                                <li><a href="#" class="footer-link">Low fare tips</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom">
+                    <p class="copyright">Copyright, Trabook 2022. All rights reserved.</p>
+                    <p class="terms">Terms &amp; Conditions</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
