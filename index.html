@@ -17,7 +17,7 @@
         <div class="hero-section">
 
             <!-- Header/Navigation Bar -->
-            <div class="header" style="background-color: #5e5e5e; margin-bottom: 100px; color: black;">
+            <div class="header">
                 <div class="container">
                     <div class="navbar">
                         <div class="logo">
@@ -656,6 +656,129 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.querySelector('.menu-icon-button');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (mobileMenuButton && navLinks) {
+                mobileMenuButton.addEventListener('click', function () {
+                    navLinks.classList.toggle('active');
+
+                    // Optional: Add animation to hamburger icon
+                    this.classList.toggle('active');
+                });
+
+                // Close mobile menu when clicking on a nav link
+                const navLinksItems = document.querySelectorAll('.nav-link');
+                navLinksItems.forEach(link => {
+                    link.addEventListener('click', function () {
+                        navLinks.classList.remove('active');
+                        mobileMenuButton.classList.remove('active');
+                    });
+                });
+
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', function (event) {
+                    const isClickInsideNav = navLinks.contains(event.target);
+                    const isClickOnButton = mobileMenuButton.contains(event.target);
+
+                    if (!isClickInsideNav && !isClickOnButton && navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        mobileMenuButton.classList.remove('active');
+                    }
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            anchorLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#') {
+                        const target = document.querySelector(href);
+                        if (target) {
+                            e.preventDefault();
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Add scroll effect to header (only on mobile/tablet)
+            const header = document.querySelector('.header');
+            if (header) {
+                window.addEventListener('scroll', function () {
+                    // Only apply background change on screens smaller than 1024px (desktop)
+                    if (window.innerWidth < 1024) {
+                        if (window.scrollY > 100) {
+                            header.style.background = 'rgba(94, 94, 94, 0.98)';
+                        } else {
+                            header.style.background = 'rgba(94, 94, 94, 0.95)';
+                        }
+                    } else {
+                        // Keep transparent on desktop
+                        header.style.background = 'transparent';
+                    }
+                });
+
+                // Also check on window resize
+                window.addEventListener('resize', function () {
+                    if (window.innerWidth >= 1024) {
+                        header.style.background = 'transparent';
+                    }
+                });
+            }
+
+            // Form validation
+            const searchForm = document.querySelector('.form-container');
+            if (searchForm) {
+                const submitButton = searchForm.querySelector('button');
+                if (submitButton) {
+                    submitButton.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        const location = searchForm.querySelector('#location');
+                        const date = searchForm.querySelector('#date');
+                        const guests = searchForm.querySelector('#guests');
+
+                        let hasError = false;
+
+                        // Simple validation
+                        if (!location.value) {
+                            location.style.borderColor = 'red';
+                            hasError = true;
+                        } else {
+                            location.style.borderColor = '#e5e5e5';
+                        }
+
+                        if (!date.value) {
+                            date.style.borderColor = 'red';
+                            hasError = true;
+                        } else {
+                            date.style.borderColor = '#e5e5e5';
+                        }
+
+                        if (!guests.value) {
+                            guests.style.borderColor = 'red';
+                            hasError = true;
+                        } else {
+                            guests.style.borderColor = '#e5e5e5';
+                        }
+
+                        if (!hasError) {
+                            alert('Search functionality would be implemented here!');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
